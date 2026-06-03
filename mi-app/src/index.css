@@ -1,0 +1,74 @@
+:root {
+  --text: #4d4a46;
+  --text-h: #1c1714;
+  --bg: #f6f0e8;
+  --surface: rgba(255, 255, 255, 0.7);
+  --surface-strong: #fffaf4;
+  --border: rgba(68, 56, 47, 0.14);
+  --accent: #a16f45;
+  --accent-bg: rgba(161, 111, 69, 0.12);
+  --accent-border: rgba(161, 111, 69, 0.35);
+  --shadow: rgba(48, 32, 19, 0.08) 0 18px 36px -18px, rgba(48, 32, 19, 0.06) 0 8px 18px -12px;
+  --sans: "Segoe UI", Inter, system-ui, sans-serif;
+  --heading: "Georgia", "Times New Roman", serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/1.55 var(--sans);
+  letter-spacing: 0.12px;
+  color-scheme: light;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(181, 144, 103, 0.18), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(116, 143, 123, 0.18), transparent 28%),
+    var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+#root {
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading);
+  color: var(--text-h);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+::selection {
+  background: rgba(161, 111, 69, 0.2);
+  color: var(--text-h);
+}
